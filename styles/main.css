@@ -40,4 +40,28 @@ body main h2 {
 
 body section {
   height: 40vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../hamburg.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+body section h2 {
+  font-size: 4vw;
+  color: white;
+}
+
+body section p {
+  font-size: 1.7vw;
+  font-family: tahoma;
+  width: 90%;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+body section form {
+  display: grid;
 }
