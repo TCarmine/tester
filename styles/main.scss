@@ -17,4 +17,22 @@ body {
       }
     }
   }
+
+  main {
+    height: 35vw;
+    background: {
+      repeat: no-repeat;
+      size: 100% 100%;
+      image: url(../planesky.jpg);
+    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h2 {
+      color: white;
+      font-weight: bold;
+      font-size: 6vw;
+    
+    }
+  }
 }

@@ -21,3 +21,19 @@ body nav a {
 body nav a:hover {
   background: #3f3f3f;
 }
+
+body main {
+  height: 35vw;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: url(../planesky.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body main h2 {
+  color: white;
+  font-weight: bold;
+  font-size: 6vw;
+}
