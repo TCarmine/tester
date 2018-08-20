@@ -1,3 +1,27 @@
+@keyframes animate {
+  0% {
+    transform: translate(100%, 0);
+  }
+  80% {
+    transform: translate(-10%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes animate-alternate {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  80% {
+    transform: translate(10%, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
 body {
   margin: 0;
 }
@@ -189,4 +213,48 @@ body #gallery div.valtos {
   grid-column-start: 12;
   grid-row-end: span 3;
   grid-column-end: span 3;
+}
+
+body footer {
+  padding: 5vw 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+body footer button {
+  font-family: tahoma;
+  font-size: 2.2vw;
+  padding: 1vw 1.5vw;
+  margin: 2vw auto;
+  color: green;
+  border-radius: 0.2vw;
+  border: none;
+}
+
+body footer button:hover {
+  cursor: pointer;
+}
+
+body footer button:focus ~ article:first-of-type {
+  animation: animate 2s linear forwards;
+}
+
+body footer button:focus ~ article:last-of-type {
+  animation: animate-alternate 2s linear forwards;
+}
+
+body footer article {
+  background: orange;
+  font-size: 1.8vw;
+  margin: 1vw 0;
+}
+
+body footer article:first-of-type {
+  transform: translate(100%, 0);
+  text-align: left;
+}
+
+body footer article:last-of-type {
+  transform: translate(-100%, 0);
+  text-align: right;
 }
