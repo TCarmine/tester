@@ -1,7 +1,38 @@
+@keyframes makeCircle {
+  0% {transform: translate(0, 0); opacity: 0;};
+  20% {opacity: 1;};
+  80% {transform: translateX(50vw); opacity: 1;};
+  100% {transform: translate(50vw, 10vw); opacity: 1;};
+}
+
+
 body {
   background: yellow;
+  padding: 0;
+  margin:0;
+  text-align:center;
+
+  button {
+    background: green;
+    color: white;
+    border: none;
+    padding: 1vw 2vw;
+    &:hover {
+      cursor: pointer;
+    }
+    &:focus {
+      background: white;
+      color: green;
+        ~ .animated {
+        animation: makeCircle 10s linear forwards;
+      }
+    }
+  }
 
   div {
+    padding: 0;
+    margin-bottom: 5vw;
+    box-sizing: border-box;
     width: 15vw;
     height: 15vw;
     background-color: red;
